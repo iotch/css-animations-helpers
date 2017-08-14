@@ -1,0 +1,38 @@
+{
+  "name": "@iotch/css-animations-helpers",
+  "version": "0.1.0",
+  "description": "A set of methods to parse element animation/transition css properties",
+  "main": "./lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./lib/*",
+    "test": "TS_NODE_PROJECT=tsconfig-test.json TS_NODE_CACHE=false mocha --use_strict --compilers ts:ts-node/register test/**/*.ts",
+    "compile": "tsc --project ./tsconfig-compile.json",
+    "build": "npm run test && npm run clean && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotch/css-animations-helpers.git"
+  },
+  "author": "iotch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iotch/css-animations-helpers/issues"
+  },
+  "homepage": "https://github.com/iotch/css-animations-helpers#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.3",
+    "@types/jsdom": "^11.0.1",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.20",
+    "@types/sinon": "^2.3.3",
+    "chai": "*",
+    "jsdom": "^11.1.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "*",
+    "rimraf": "^2.6.1",
+    "sinon": "^3.2.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  }
+}
